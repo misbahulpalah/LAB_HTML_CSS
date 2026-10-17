@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil dan informasi STT Cipasung">
+    <title>Profil STT Cipasung</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #263238;
+            background-color: #f2f5f9;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+        }
+
+        header,
+        main,
+        footer {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        header h1 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 100%;
+            max-width: 960px;
+            margin: 24px auto;
+        }
+
+        section {
+            background-color: white;
+            border: 1px solid #d5dee8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: #003366;
+            margin-top: 0;
+        }
+
+        .campus-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 8px;
+            font: inherit;
+        }
+
+        button {
+            align-self: flex-start;
+            padding: 10px 18px;
+            border: 0;
+            border-radius: 5px;
+            background-color: #003366;
+            color: white;
+            font: inherit;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #14558c;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>STT Cipasung</h1>
+
+        <nav aria-label="Navigasi utama">
+            <a href="#home">Home</a>
+            <a href="#about">Programs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section id="about">
+            <h2>About Us</h2>
+
+            <p>
+                STT Cipasung is a technology college in Tasikmalaya.
+            </p>
+
+            <img
+                class="campus-image"
+                src="https://placehold.co/600x300?text=STT+Cipasung"
+                alt="Ilustrasi profil STT Cipasung"
+                width="600"
+                height="300"
+            >
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form action="#" method="get">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                >
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 STT Cipasung</p>
+    </footer>
+</body>
+</html>

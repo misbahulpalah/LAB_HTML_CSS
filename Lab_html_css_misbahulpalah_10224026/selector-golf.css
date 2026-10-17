@@ -1,0 +1,93 @@
+
+/* Selector elemen */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #263238;
+    background-color: #f5f7fa;
+}
+
+header,
+footer {
+    padding: 16px;
+    background-color: #17365d;
+    color: white;
+}
+
+/* Selector class */
+.box {
+    padding: 16px;
+    margin: 16px 0;
+    border: 2px solid #9e9e9e;
+    background-color: white;
+}
+
+.highlight {
+    color: #1565c0;
+}
+
+/* Selector elemen turunan */
+.box p {
+    color: green;
+}
+
+/* Selector class dan elemen */
+p.text {
+    color: #555;
+}
+
+/* Selector dengan specificity lebih tinggi */
+#title {
+    color: red;
+}
+
+.heading {
+    color: blue;
+}
+
+h2 {
+    color: purple;
+}
+
+/* Selector gabungan */
+.card p {
+    padding: 8px;
+    background-color: #e3f2fd;
+}
+
+.link {
+    color: #0d47a1;
+}
+
+.link:hover {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+/* Tombol dan pseudo-class */
+.btn {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1976d2;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0d47a1;
+}
+
+/* Fokus keyboard */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    margin-top: 24px;
+}

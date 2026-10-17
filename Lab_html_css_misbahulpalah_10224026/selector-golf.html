@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Golf - Praktikum Web101</title>
+    <link rel="stylesheet" href="selector-golf.css">
+</head>
+<body>
+    <header>
+        <h1>Selector Golf</h1>
+        <p>Praktikum HTML dan CSS Web101</p>
+    </header>
+
+    <main>
+        <section class="box">
+            <h2 id="title" class="heading">Latihan Selector</h2>
+
+            <p id="paragraph-a">Paragraf A berada di dalam elemen box.</p>
+            <p class="highlight">Paragraf B juga berada di dalam elemen box.</p>
+        </section>
+
+        <p class="box" id="paragraph-c">
+            Paragraf C memiliki class box, tetapi berada di luar elemen box yang pertama.
+        </p>
+
+        <section class="selector-test">
+            <h2>Pengujian Selector</h2>
+
+            <p class="text">Teks biasa.</p>
+            <p class="text active">Teks dengan class active.</p>
+
+            <div class="card">
+                <p>Paragraf di dalam card.</p>
+                <a href="#contact" class="link">Tautan contoh</a>
+            </div>
+
+            <button type="button" class="btn">Tombol Contoh</button>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak</h2>
+            <p>Bagian ini menjadi tujuan tautan contoh.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Praktikum Web101</p>
+    </footer>
+</body>
+</html>
